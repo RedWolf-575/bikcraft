@@ -1,0 +1,25 @@
+header {
+  background-color: #000000;
+  padding: 1.25rem 0;
+}
+.header {
+  max-width: 70rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+}
+.header ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: end;
+}
+.header li {
+  padding: 1rem;
+}
+.header img {
+  padding: 1rem 2rem;
+}

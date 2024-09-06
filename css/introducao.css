@@ -1,0 +1,24 @@
+.introducao {
+  background-color: #000000;
+  max-height: 700px;
+}
+.container-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 70rem;
+  margin: 0 auto;
+}
+.introbox {
+  margin-top: 12.5rem;
+  margin-bottom: 6.25rem;
+}
+.introbox p {
+  margin-top: 2rem;
+}
+.container-intro a {
+  display: inline-block;
+  background: linear-gradient(#ffbf00, #f2a50c);
+  padding: 1.25rem 2.5rem;
+  margin-top: 1.25rem;
+  border-radius: 4px;
+}
