@@ -1,7 +1,7 @@
-@import url(/css/header.css);
-@import url(/css/introducao.css);
+@import url(/css/11_header.css);
+@import url(/css/12_introducao.css);
+@import url(/css/13_escolha.css);
 body {
-  max-width: 1600px;
   margin: 0;
   padding: 0;
 }
@@ -16,7 +16,7 @@ a {
   margin: 0;
   text-decoration: none;
 }
-img{
+img {
   max-width: 100%;
 }
 .w {
