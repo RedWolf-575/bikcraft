@@ -17,10 +17,3 @@
 .introbox p {
   margin-top: 2rem;
 }
-.container-intro a {
-  display: inline-block;
-  background: linear-gradient(#ffbf00, #f2a50c);
-  padding: 1.25rem 2.5rem;
-  margin-top: 1.25rem;
-  border-radius: 4px;
-}
