@@ -1,0 +1,30 @@
+.opcoes-container ul {
+  display: flex;
+  gap: 2.5rem;
+  max-width: 91rem;
+  margin: 0 auto;
+  margin-bottom: 7.5rem;
+}
+.opcoes-container li a {
+  display: block;
+  position: relative;
+}
+.opcoes-container li a p {
+  padding: 1.25rem;
+}
+.opcoes-container li a p::before {
+  content: "";
+  width: 0.75rem;
+  height: 0.5rem;
+  background-color: var(--cp1);
+  position: absolute;
+  bottom: 3.75rem;
+  left: 0;
+}
+.opcoes-container li a span {
+  padding-left: 1.25rem;
+}
+.opcoes-container h1 {
+  max-width: 70rem;
+  margin: 0 auto 2.5rem;
+}

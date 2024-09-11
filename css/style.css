@@ -2,7 +2,8 @@
 @import url(/css/tipografia.css);
 @import url(/css/11_header.css);
 @import url(/css/12_introducao.css);
-@import url(/css/13_escolha.css);
+@import url(/css/13_opcoes.css);
+@import url(/css/14_tecno.css);
 body {
   margin: 0;
   padding: 0;
@@ -20,4 +21,8 @@ a {
 }
 img {
   max-width: 100%;
+  border-radius: 4px;
+}
+ul{
+  list-style: none;
 }
