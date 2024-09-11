@@ -1,0 +1,13 @@
+.parceiros h1 {
+  max-width: 70rem;
+  margin: 0 auto 4.375rem;
+}
+.parceiros-logos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 91rem;
+  margin: 0 auto 6.25rem;
+  justify-items: center;
+  padding: 3.125rem;
+  gap: 3.125rem;
+}
