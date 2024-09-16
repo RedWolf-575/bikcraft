@@ -4,11 +4,14 @@
 @import url(/css/12_introducao.css);
 @import url(/css/13_opcoes.css);
 @import url(/css/14_tecno.css);
-@import url(/15_parceiros.css);
+@import url(/css/15_parceiros.css);
+@import url(/css/16_depoimento.css);
+@import url(/css/17_seguros.css);
 body {
   margin: 0;
   padding: 0;
 }
+blockquote,
 h1,
 h2,
 h3,

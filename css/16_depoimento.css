@@ -1,0 +1,38 @@
+.depoimento {
+  display: grid;
+  grid-template-columns: 5fr 6fr;
+  background-color: var(--cp1);
+  align-items: end;
+  }
+.depoimento img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0px;
+}
+.depoimento-conteudo {
+  padding: 5rem;
+}
+.depoimento-conteudo p {
+  max-width: 24ch;
+  margin-bottom: 2.5rem;
+  font-family: "Merriweather", serif;
+  font-style: italic;
+  position: relative;
+}
+.depoimento-conteudo p::before,
+.depoimento-conteudo p::after {
+  font-size: 8rem;
+  position: absolute;
+  color: var(--cp2);
+}
+.depoimento-conteudo p::before {
+  content: "“";
+  left: -4rem;
+  top: -3rem;
+}
+.depoimento-conteudo p::after {
+  content: "”";
+  right: -2rem;
+  bottom: -7.5rem;
+}

@@ -1,0 +1,16 @@
+.seguros-bkg{
+  margin-bottom: 7.5rem;
+  background-color: var(--c11);
+  }
+.seguros-bkg h1{
+  padding: 7.5rem 1.25rem;
+  max-width: 70rem;
+  margin: 0 auto;
+}
+.seguros-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 70rem;
+  margin: 0 auto;
+  padding-bottom: 7.5rem;
+}
