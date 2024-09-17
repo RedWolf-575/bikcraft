@@ -1,9 +1,8 @@
 .seguros-bkg{
-  margin-bottom: 7.5rem;
   background-color: var(--c11);
   }
 .seguros-bkg h1{
-  padding: 7.5rem 1.25rem;
+  padding: 5rem 1.25rem;
   max-width: 70rem;
   margin: 0 auto;
 }
@@ -13,4 +12,39 @@
   max-width: 70rem;
   margin: 0 auto;
   padding-bottom: 7.5rem;
+  }
+.seguros-plano{
+  background-color: var(--c12);
+  display: grid inline;
+  grid-template-columns: 2fr 1fr;
+  padding: 2.5rem;
+  margin: auto 0;
+}
+.seguros-plano span::after{
+content: "mensal";
+font-size: .75rem;
+color: var(--c6);
+position: relative;
+bottom: -1rem;
+right: 3rem;
+}
+.seguros-plano a{
+  grid-column: 1;
+  max-width: 7.75rem;
+  }
+.seguros-plano ul{
+  padding: 2.5rem 0rem;
+  line-height: 2.5rem;
+}
+.seguros-plano li{
+  position: relative;  
+ }
+.seguros-plano li::before{
+content: "";
+background-image: url(/img/icones/lista.svg);
+width: 13px;
+height: 9px;
+position: absolute;
+left: -1.25rem;
+top:1rem;
 }

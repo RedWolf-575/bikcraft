@@ -17,9 +17,10 @@
 .parceiros-logos img {
   margin: auto;
 }
-.parceiros-logos li:nth-child(n + 5){
+.parceiros-logos li:nth-child(n + 5) {
   border-top: solid 2px var(--c2);
 }
-.parceiros-logos li:first-child, .parceiros-logos li:nth-child(5) {
+.parceiros-logos li:first-child,
+.parceiros-logos li:nth-child(5) {
   border-left: none;
 }
