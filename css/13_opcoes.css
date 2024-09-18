@@ -1,3 +1,6 @@
+.opcoes-container div {
+  margin: 0 1.75rem;
+}
 .opcoes-container ul {
   display: flex;
   gap: 2.5rem;
@@ -24,7 +27,25 @@
 .opcoes-container li a span {
   padding-left: 1.25rem;
 }
+.opcoes-container li img:hover {
+  max-width: 101%;
+  max-height: auto;
+}
 .opcoes-container h1 {
   max-width: 70rem;
   margin: 0 auto 2.5rem;
+}
+
+@media (max-width: 65rem) {
+  .opcoes-container li a p {
+    font-size: 1.3rem;
+    padding: .625rem;
+  }
+  .opcoes-container li a span{
+    font-size: .85rem;
+  }
+  .opcoes-container li a p::before {
+    bottom: 2.25rem;
+    left: -.25rem;
+  }
 }

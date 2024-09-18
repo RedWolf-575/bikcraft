@@ -23,3 +23,25 @@ header {
 .header img {
   padding: 1rem 2rem;
 }
+.header li a {
+  padding: 0.625rem 1.25rem;
+}
+.header li a:hover {
+  transition-duration: 0.2s;
+  transition-behavior: allow-discrete;
+  border: white solid 2px;
+  border-radius: 4px;
+}
+@media (max-width: 50rem) {
+  .header {
+    justify-content: center;
+  }
+  .header-logo {
+    margin: 0 6rem;
+  }
+  .header li a {
+    padding: 0.625rem 1.25rem;
+    border-radius: 4px;
+    background: linear-gradient(#404040, #2e2e2e);
+  }
+}

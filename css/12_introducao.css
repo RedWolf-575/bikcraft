@@ -12,8 +12,22 @@
 }
 .introbox {
   margin-bottom: 12.5rem;
-  margin-left: 2rem;
+  margin-left: 1.75rem;
 }
 .introbox p {
   margin-top: 2rem;
+}
+@media (max-width: 75rem) {
+  .introducao{
+    margin-bottom: 2.5rem;
+  }
+  .container-intro {
+    background-image: url(/img/bicicleta/nimbus1.jpg);
+    }
+  .container-intro img {
+    display: none;
+  }
+  .introbox a{
+    margin-top: 7.5rem;
+  }
 }

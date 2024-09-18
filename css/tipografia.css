@@ -9,10 +9,22 @@
   background: linear-gradient(#ffbf00, #f2a50c);
   color: var(--cp5);
 }
+.yellow:hover {
+  transition-duration: 0.1s;
+  transition-behavior: allow-discrete;
+  border: white solid 2px;
+  border-radius: 4px;
+}
 .grey {
   background: linear-gradient(#404040, #2e2e2e);
   color: var(--c4);
-  }
+}
+.grey:hover {
+  transition-duration: 0.1s;
+  transition-behavior: allow-discrete;
+  border: white solid 2px;
+  border-radius: 4px;
+}
 .f1xxl {
   font: 600 4rem/1.125 "poppins", sans-serif;
 }
