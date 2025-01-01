@@ -2,6 +2,7 @@ header {
   background-color: #000000;
   padding: 1.25rem 0;
 }
+
 .header {
   max-width: 70rem;
   display: flex;
@@ -10,6 +11,7 @@ header {
   margin: 0 auto;
   align-items: center;
 }
+
 .header ul {
   list-style: none;
   display: flex;
@@ -17,21 +19,26 @@ header {
   gap: 1rem;
   justify-content: end;
 }
+
 .header li {
   padding: 1rem;
 }
+
 .header img {
   padding: 1rem 2rem;
 }
+
 .header li a {
   padding: 0.625rem 1.25rem;
-}
-.header li a:hover {
-  transition-duration: 0.2s;
-  transition-behavior: allow-discrete;
-  border: white solid 2px;
+  border: solid 2px transparent; /* Adiciona a borda transparente */
   border-radius: 4px;
+  transition: border-color 0.2s ease-in-out;
 }
+
+.header li a:hover {
+  border-color: white; /* Apenas altera a cor no hover */
+}
+
 @media (max-width: 50rem) {
   .header {
     justify-content: center;
@@ -45,3 +52,4 @@ header {
     background: linear-gradient(#404040, #2e2e2e);
   }
 }
+

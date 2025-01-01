@@ -3,6 +3,7 @@
   box-shadow: inset 0 -7.5rem white;
   margin-bottom: 7.5rem;
 }
+
 .container-intro {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -10,24 +11,42 @@
   margin: 0 auto;
   align-items: end;
 }
+
 .introbox {
   margin-bottom: 12.5rem;
   margin-left: 1.75rem;
 }
+
 .introbox p {
   margin-top: 2rem;
 }
+
+.introbox a {
+  border: solid 2px transparent; /* Define a borda transparente */
+  border-radius: 4px;
+  padding: 0.625rem 1.25rem;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.introbox a:hover {
+  border-color: white; /* Apenas altera a cor da borda no hover */
+}
+
 @media (max-width: 75rem) {
-  .introducao{
+  .introducao {
     margin-bottom: 2.5rem;
   }
+
   .container-intro {
     background-image: url(/img/bicicleta/nimbus1.jpg);
-    }
+  }
+
   .container-intro img {
     display: none;
   }
-  .introbox a{
+
+  .introbox a {
     margin-top: 7.5rem;
   }
 }
+
