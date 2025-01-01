@@ -1,6 +1,7 @@
 .opcoes-container div {
   margin: 0 1.75rem;
 }
+
 .opcoes-container ul {
   display: flex;
   gap: 2.5rem;
@@ -8,13 +9,16 @@
   margin: 0 auto;
   margin-bottom: 7.5rem;
 }
+
 .opcoes-container li a {
   display: block;
   position: relative;
 }
+
 .opcoes-container li a p {
   padding: 1.25rem;
 }
+
 .opcoes-container li a p::before {
   content: "";
   width: 0.75rem;
@@ -23,14 +27,21 @@
   position: absolute;
   bottom: 3.75rem;
   left: 0;
+  transition: transform 0.2s ease-in-out; /* Animação para o movimento */
 }
+
 .opcoes-container li a span {
   padding-left: 1.25rem;
 }
-.opcoes-container li img:hover {
-  max-width: 101%;
-  max-height: auto;
+
+.opcoes-container li img {
+  transition: transform 0.2s ease-in-out; /* Adiciona transição para hover */
 }
+
+.opcoes-container li img:hover {
+  transform: scale(1.01); /* Substitui `max-width` por escala para evitar impacto no layout */
+}
+
 .opcoes-container h1 {
   max-width: 70rem;
   margin: 0 auto 2.5rem;
@@ -39,13 +50,16 @@
 @media (max-width: 65rem) {
   .opcoes-container li a p {
     font-size: 1.3rem;
-    padding: .625rem;
+    padding: 0.625rem;
   }
-  .opcoes-container li a span{
-    font-size: .85rem;
+
+  .opcoes-container li a span {
+    font-size: 0.85rem;
   }
+
   .opcoes-container li a p::before {
     bottom: 2.25rem;
-    left: -.25rem;
+    left: -0.25rem;
   }
 }
+
