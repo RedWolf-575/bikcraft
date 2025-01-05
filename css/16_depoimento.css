@@ -28,7 +28,7 @@
 }
 .depoimento-conteudo p::before {
   content: "“";
-  left: -4rem;
+  left: -5rem;
   top: -3rem;
 }
 .depoimento-conteudo p::after {

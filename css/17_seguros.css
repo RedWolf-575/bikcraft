@@ -1,25 +1,33 @@
 .seguros-bkg {
   background-color: var(--c11);
 }
+
 .seguros-bkg h1 {
   padding: 5rem 1.25rem;
   max-width: 70rem;
   margin: 0 auto;
 }
+
 .seguros-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr; /* Duas colunas iguais */
+  grid-auto-rows: auto; /* Altura das linhas ajusta-se ao conteúdo */
   max-width: 70rem;
   margin: 0 auto;
   padding-bottom: 7.5rem;
+  align-items: start; /* Alinha todos os blocos ao topo */
+  gap: 2.5rem; /* Espaço entre os blocos */
+  border-top: solid 2px transparent; /* Linha invisível acima */
 }
+
 .seguros-plano {
   background-color: var(--c12);
-  display: grid inline;
+  display: grid;
   grid-template-columns: 2fr 1fr;
   padding: 2.5rem;
-  margin: auto 0;
+  transition: transform 0.2s ease-in-out;
 }
+
 .seguros-plano span::after {
   content: "mensal";
   font-size: 0.75rem;
@@ -28,17 +36,29 @@
   bottom: -1rem;
   right: 3rem;
 }
+
 .seguros-plano a {
   grid-column: 1;
   max-width: 7.75rem;
+  border: solid 2px transparent;
+  border-radius: 4px;
+  transition: transform 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
+
+.seguros-plano a:hover {
+  transform: translateY(-5px);
+  border-color: var(--c6);
+}
+
 .seguros-plano ul {
   padding: 2.5rem 0rem;
   line-height: 2.5rem;
 }
+
 .seguros-plano li {
   position: relative;
 }
+
 .seguros-plano li::before {
   content: "";
   background-image: url(/img/icones/lista.svg);
@@ -48,32 +68,54 @@
   left: -1.25rem;
   top: 1rem;
 }
+
 @media (max-width: 70rem) {
-  .seguros-bkg h1{
+  .seguros-bkg h1 {
     padding-bottom: 1rem;
   }
+
   .seguros-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Layout em uma única coluna para telas menores */
     padding-bottom: 0;
   }
+
   .ouro {
     grid-row: 1;
   }
+
   .seguros-plano {
     border: solid 2px var(--w);
   }
+
   .seguros-plano a {
     grid-column: 2;
     align-self: self-end;
     justify-self: end;
   }
+
   .seguros-plano span {
     justify-self: end;
   }
 }
+
 @media (max-width: 45rem) {
   .seguros-plano a {
     font-size: 0.75rem;
     padding: 0.625rem 1.25rem;
   }
 }
+
+.seguros-plano span {
+  display: inline-block; /* Mantém o texto em linha */
+  white-space: nowrap; /* Evita quebra de linha */
+}
+
+.seguros-plano span::after {
+  content: "mensal";
+  font-size: 0.75rem;
+  color: var(--c6);
+  position: relative;
+  bottom: -1rem;
+  left: -3rem; /* Ajuste fino para alinhamento */
+}
+
